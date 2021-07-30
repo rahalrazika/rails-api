@@ -1,4 +1,5 @@
 class PartnershipsController < ApplicationController
+  before_action :authorized
   def index
     @partnerships = Partnership.where(user_id: user.id)
     if @partnerships
@@ -29,5 +30,4 @@ class PartnershipsController < ApplicationController
   def partnership_params
     params.require(:partnership).permit(:user_id, :project_id, :date)
   end
-
 end
