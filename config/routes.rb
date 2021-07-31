@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :favourites
   root 'users#login'
   resource :users, only: %i[create]
   resources :projects

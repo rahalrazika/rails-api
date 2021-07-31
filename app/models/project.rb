@@ -4,4 +4,5 @@ class Project < ApplicationRecord
   validates :description, length: { minimum: 10 }
 
   has_many :partnerships, dependent: :destroy
+  has_one :favourite, dependent: :destroy
 end
