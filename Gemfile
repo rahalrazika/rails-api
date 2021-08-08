@@ -34,9 +34,11 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails', '~> 5.0.0'
   gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
+  gem 'capybara'
+  gem 'webdrivers'
 end
 
 group :development do
