@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    render json: @projects
+    render json: @project
   end
 
   private
