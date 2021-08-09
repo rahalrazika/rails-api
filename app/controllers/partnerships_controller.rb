@@ -11,7 +11,6 @@ class PartnershipsController < ApplicationController
 
   def create
     @partnership = Partnership.new(partnership_params)
-    @partnership.user_id = user.id
     if @partnership.save
       render json: @partnership, status: :ok
     else

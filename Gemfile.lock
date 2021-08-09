@@ -95,6 +95,7 @@ GEM
     ffi (1.15.3)
     globalid (0.5.1)
       activesupport (>= 5.0)
+    hirb (0.7.3)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jwt (2.2.3)
@@ -228,6 +229,7 @@ DEPENDENCIES
   capybara
   database_cleaner
   factory_bot_rails
+  hirb
   jwt
   listen (~> 3.3)
   pg (~> 1.1)
