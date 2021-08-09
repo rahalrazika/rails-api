@@ -10,7 +10,7 @@ class FavouritesController < ApplicationController
   end
 
   def create
-    @favourite = Favourite.new(favourite_params) 
+    @favourite = Favourite.new(favourite_params)
     if @favourite.save
       render json: @favourite, status: :ok
     else

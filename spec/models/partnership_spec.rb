@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Partnership, type: :model do
-
   before { @partnership = FactoryBot.build(:partnership) }
   it { should respond_to(:date) }
   it { should respond_to(:user_id) }
@@ -11,10 +10,10 @@ RSpec.describe Partnership, type: :model do
 
   subject { @partnership }
   describe 'when date  is empty' do
-    before { @partnership.date= ' ' }
+    before { @partnership.date = ' ' }
     it { should_not be_valid }
   end
-  
+
   describe 'when user_id  is not present' do
     before { @partnership.user_id = ' ' }
     it { should_not be_valid }

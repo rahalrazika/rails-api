@@ -6,4 +6,3 @@ class Project < ApplicationRecord
   has_many :partnerships, dependent: :destroy
   has_one :favourites, dependent: :destroy
 end
-

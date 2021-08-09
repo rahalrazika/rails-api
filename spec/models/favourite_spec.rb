@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Favourite, type: :model do
-
   before { @favourite = FactoryBot.build(:favourite) }
 
   it { should respond_to(:user_id) }

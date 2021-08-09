@@ -20,7 +20,7 @@ RSpec.describe Project, type: :model do
     before { @project.name = 'Shopify website ' }
     it { should be_valid }
   end
- 
+
   describe 'when project price  is not present' do
     before { @project.price = ' ' }
     it { should_not be_valid }
@@ -37,6 +37,4 @@ RSpec.describe Project, type: :model do
     before { @project.description = 'loremloremloremleromloremloremloremloremloreù' }
     it { should be_valid }
   end
- 
- 
 end
