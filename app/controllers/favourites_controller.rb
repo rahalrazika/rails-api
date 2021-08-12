@@ -1,13 +1,13 @@
 class FavouritesController < ApplicationController
   before_action :authorized
   def index
-      @favourites = Favourite.where(user_id: logged_in_user.id)
-     
-     if @favourites
-       render json: @favourites
-     else
-       render json: 'The Page is empty'
-     end
+    @favourites = Favourite.where(user_id: logged_in_user.id)
+
+    if @favourites
+      render json: @favourites
+    else
+      render json: 'The Page is empty'
+    end
   end
 
   def create
