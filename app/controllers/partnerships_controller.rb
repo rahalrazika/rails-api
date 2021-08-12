@@ -21,7 +21,7 @@ class PartnershipsController < ApplicationController
   def destroy
     @partnership = Partnership.find_by!(id: params[:id])
     @partnership.destroy
-    render json: 'The parntership is deleted'
+    render json: 'The parntership has been deleted
   end
 
   private

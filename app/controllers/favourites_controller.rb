@@ -21,9 +21,9 @@ class FavouritesController < ApplicationController
   end
 
   def destroy
-    @favourite = favourite.find_by!(project_id: params[:id])
+    @favourite = Favourite.find(params[:id])
     @favourite.destroy
-    render json: 'The parntership is deleted'
+    render json: 'The parntership has been deleted'
   end
 
   private
