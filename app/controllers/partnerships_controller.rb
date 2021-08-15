@@ -1,7 +1,7 @@
 class PartnershipsController < ApplicationController
   before_action :authorized
   def index
-    @partnerships = Partnership.where(user_id: user.id)
+    @partnerships = Partnership.where(user_id: logged_in_user.id)
     if @partnerships
       render json: @partnerships
     else
