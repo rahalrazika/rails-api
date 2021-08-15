@@ -59,14 +59,14 @@ $ bundle exec rspec
 ## API ROUTES 
 | ROUTES            | HTTP Verb       | Description               | 
 | ------------------| --------------- | --------------------------| 
-| /users            | POST            | create a new user         | 
+| /users            | POST            | Create a new user         | 
 | /login            | POST            | Login page                | 
 | /auto_login       | GET             | Show current user         | 
 | /favourites       | GET             | Show all the favourites   | 
 | /favourites       | POST            | create a new favourite    | 
 | /favourites/:id   | DELETE          | Delete favourite          |
 | /partnerships     | GET             | Show all the partnerships | 
-| /partnerships     | POST            | create a new partnership  | 
+| /partnerships     | POST            | Create a new partnership  | 
 | /partnerships/:id | DELETE          | Delete partnership        |  
 | /projects         | GET             | Show all the projects     | 
 | /projects/:id     | GET             | Show  a project details   | 

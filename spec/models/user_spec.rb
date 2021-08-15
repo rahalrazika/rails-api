@@ -28,7 +28,7 @@ RSpec.describe User, type: :model do
     before { @user.email = 'dd@gmail.com ' }
     it { should be_valid }
   end
-  describe "when email is taken" do
+  describe 'when email is taken' do
     before do
       user_with_same_email = @user.dup
       user_with_same_email.save
