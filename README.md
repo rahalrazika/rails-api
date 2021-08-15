@@ -41,7 +41,8 @@ rails db:create
 ```
 $ rake db:migrate
 ```
-```
+
+
 ## Testing
  
 
@@ -53,7 +54,6 @@ Open terminal
 
 ```
 $ bundle exec rspec
-
 ```
 
 
