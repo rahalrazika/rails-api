@@ -14,7 +14,7 @@ This is Rest API built with Ruby on Rails.it’s purpose is a backend for a fron
 - Stylelint
 
 ## Live Demo 🚀
-[Loop](https://boiling-ravine-48631.herokuapp.com/) 
+[Loop](https://desolate-cove-61706.herokuapp.com) 
 
 ## Getting Started 💻
 
