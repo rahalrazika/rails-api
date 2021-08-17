@@ -28,7 +28,7 @@ class ApplicationController < ActionController::API
   end
 
   def logged_in?
-    !!logged_in_user
+    !logged_in_user.nil?
   end
 
   def authorized
